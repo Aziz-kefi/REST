@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose=require('mongoose');
 const { Schema } = mongoose;
 
 const User= new Schema({
@@ -13,4 +13,4 @@ LastName:{
 age:Number
 })
 
-module.exports=Schema.model('User',User)
+module.exports=mongoose.model('User',User)

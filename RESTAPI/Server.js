@@ -1,7 +1,7 @@
 const express = require('express')
 const app=express()
-const port=3000;
-const Database= require("./Database");
+
+const DB= require("./Database");
 let mongoose = require('mongoose')
 
 const User= require('./models/User');
